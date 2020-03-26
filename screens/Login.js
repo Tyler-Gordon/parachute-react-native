@@ -31,9 +31,9 @@ export default function loginPrompt(props) {
   return (
     <View style={styles.screen}>
       <View style={styles.login}>
-        <Text style={styles.loginText}>Login</Text>
+        <Text style={styles.loginText}>Parachute</Text>
       </View>
-      <View>
+      <View style={styles.loginContainer}>
         <TextInput
           style={styles.input}
           placeholder='Username'
@@ -65,13 +65,14 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   login: {
-    padding: 30,
-    marginBottom: 40,
+		padding: 30,
+		marginBottom: 20,
   },
   loginText: {
-    color: '#187795',
+		color: '#187795',
+		marginTop: 90,
     fontSize: 35,
-  },
+	},
   input: {
     borderBottomColor: "#D3D3D3",
     borderBottomWidth: 1,
@@ -93,5 +94,9 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#fff',
     textAlign: 'center',
-  },
+	},
+	loginContainer:{
+		flex: 1,
+		marginTop: 50,
+	}
 })
